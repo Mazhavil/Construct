@@ -1,0 +1,213 @@
+{
+    "conventus_id": 1,
+    "conventus_name": "Piston",
+    "singulas": [
+        {
+            "name": "conrod",
+            "singula_id": 2,
+            "model": "engine_assy2_conrod",
+            "position": {
+                "x": -6,
+                "y": 1.5,
+                "z": 0
+            },
+            "pimples": [
+                {
+                    "id": 1,
+                    "position": {
+                        "x": 0.03975,
+                        "y": 0.13725,
+                        "z": 0
+                    },
+                    "join_id": 1
+                },
+                {
+                    "id": 2,
+                    "position": {
+                        "x": -0.0045,
+                        "y": -0.1635,
+                        "z": 0
+                    },
+                    "join_id": 9
+                }
+            ]
+        },
+        {
+            "name": "piston",
+            "singula_id": 9,
+            "model": "engine_assy2_piston",
+            "position": {
+                "x": -5,
+                "y": 1.5,
+                "z": 0
+            },
+            "pimples": [
+                {
+                    "id": 1,
+                    "position": {
+                        "x": 0,
+                        "y": -0.03,
+                        "z": 0
+                    },
+                    "join_id": 2
+                }
+            ]
+        },
+        {
+            "name": "wrist-pin",
+            "singula_id": 15,
+            "model": "engine_assy2_wrist_pin",
+            "position": {
+                "x": -4,
+                "y": 1.5,
+                "z": 0
+            },
+            "pimples": [
+                {
+                    "id": 1,
+                    "position": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    },
+                    "join_id": 3
+                }
+            ]
+        },
+        {
+            "name": "conrod-cap",
+            "singula_id": 16,
+            "model": "engine_assy2_conrod-cap",
+            "position": {
+                "x": -3,
+                "y": 1.5,
+                "z": 0
+            },
+            "pimples": [
+                {
+                    "id": 1,
+                    "position": {
+                        "x": 0.0021,
+                        "y": 0.0405,
+                        "z": 0
+                    },
+                    "join_id": 8
+                }
+            ]
+        },
+        {
+            "name": "conrod-brg",
+            "singula_id": 17,
+            "model": "engine_assy2_conrod-brg",
+            "position": {
+                "x": -2.5,
+                "y": 1.5,
+                "z": 0
+            },
+            "pimples": [
+                {
+                    "id": 1,
+                    "position": {
+                        "x": -0.0021,
+                        "y": 0.027,
+                        "z": 0
+                    },
+                    "join_id": 10
+                }
+            ]
+        },
+        {
+            "name": "conrod-brg_1",
+            "singula_id": 18,
+            "model": "engine_assy2_conrod-brg_1",
+            "position": {
+                "x": -2,
+                "y": 1.5,
+                "z": 0
+            },
+            "pimples": [
+                {
+                    "id": 0,
+                    "position": {
+                        "x": -0.0021,
+                        "y": -0.027,
+                        "z": 0
+                    },
+                    "join_id": 11
+                }
+            ]
+        }
+    ],
+    "joins": [
+        {
+            "join_id": 1,
+            "next_join_ids": [ 4, 5 ]
+        },
+        {
+            "join_id": 2,
+            "next_join_ids": [ 4, 6 ]
+        },
+        {
+            "join_id": 3,
+            "next_join_ids": [ 5, 6, 7 ]
+        },
+        {
+            "join_id": 4,
+            "next_join_ids": [ 7 ],
+            "left_join_id": 1,
+            "right_join_id": 2
+        },
+        {
+            "join_id": 5,
+            "next_join_ids": [],
+            "left_join_id": 1,
+            "right_join_id": 3
+        },
+        {
+            "join_id": 6,
+            "next_join_ids": [],
+            "left_join_id": 2,
+            "right_join_id": 3
+        },
+        {
+            "join_id": 7,
+            "next_join_ids": [],
+            "left_join_id": 3,
+            "right_join_id": 4
+        },
+        {
+            "join_id": 8,
+            "next_join_ids": [ 12 ]
+        },
+        {
+            "join_id": 9,
+            "next_join_ids": [ 13 ]
+        },
+        {
+            "join_id": 10,
+            "next_join_ids": [ 12 ]
+        },
+        {
+            "join_id": 11,
+            "next_join_ids": [ 13 ]
+        },
+        {
+            "join_id": 12,
+            "next_join_ids": [ 14 ],
+            "left_join_id": 8,
+            "right_join_id": 10
+        },
+        {
+            "join_id": 13,
+            "next_join_ids": [ 14 ],
+            "left_join_id": 9,
+            "right_join_id": 11
+        },
+        {
+            "join_id": 14,
+            "next_join_ids": [],
+            "left_join_id": 12,
+            "right_join_id": 13
+        }
+    ]
+}
